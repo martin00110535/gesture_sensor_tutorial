@@ -5,7 +5,9 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "PKS Driver": "github:peanut-king-solution/pxt-pks-shield#81fca8acce468869e7f9ba054106f031bdebd66e",
+        "Grove": "github:Planeson/pxt-grove#2b33e0b459448208484c9f6d20a27d2900e91d69"
     },
     "files": [
         "main.ts",

@@ -143,8 +143,7 @@ grove.onGesture(GroveGesture.Right, function () {
 })
 ```
 ## Assessment 1
-Control the light, ac and door
-Your task is to create a micro:bit-controlled smart room  that will use gesture to 
+Control the light, ac and door. Your task is to create a micro:bit-controlled smart room that will use gesture to 
 turn on or off  the light, turn on or off the ac and open and close the door.
 
 ``` block
@@ -175,8 +174,7 @@ basic.forever(function () {
 
 ## Assessment 2
 
-Make a comfortable environment for watching movie
-Your task is to create a micro:bit-controlled smart room  that makes a perfect environment for watching move. 
+Make a comfortable environment for watching movie. Your task is to create a micro:bit-controlled smart room that makes a perfect environment for watching move. 
 Control the light to be dimmer but does not go off, turn on the ac and close the door. 
 Use the gesture 'Wave'.
 

@@ -77,7 +77,7 @@ Turn on the ac.
 ``` block
 
 basic.forever(function () {
-	pksdriver.MotorRun(pksdriver.Motors.M1, pksdriver.Dir.CW, 70)
+	pksdriver.MotorRun(pksdriver.Motors.M1, pksdriver.Dir.CW, 255)
 })
 ```
 
@@ -93,7 +93,7 @@ basic.forever(function () {
 
 
 grove.onGesture(GroveGesture.Forward, function () {
-    pksdriver.MotorRun(pksdriver.Motors.M1, pksdriver.Dir.CW, 70)
+    pksdriver.MotorRun(pksdriver.Motors.M1, pksdriver.Dir.CW, 255)
 })
 grove.onGesture(GroveGesture.Backward, function () {
     pksdriver.MotorRun(pksdriver.Motors.M1, pksdriver.Dir.CW, 0)
@@ -121,7 +121,7 @@ Open the door.
 ``` block
 
 basic.forever(function () {
-	pksdriver.servo(pksdriver.Servos.S1, 90)
+	pksdriver.servo(pksdriver.Servos.S1, 0)
 })
 ```
 
@@ -135,10 +135,10 @@ grove.initGesture()
 basic.forever(function () {
 	
 })
-grove.onGesture(GroveGesture.Left, function () {
+grove.onGesture(GroveGesture.Right, function () {
     pksdriver.servo(pksdriver.Servos.S1, 90)
 })
-grove.onGesture(GroveGesture.Right, function () {
+grove.onGesture(GroveGesture.Left, function () {
     pksdriver.servo(pksdriver.Servos.S1, 0)
 })
 ```
@@ -152,7 +152,7 @@ grove.onGesture(GroveGesture.Down, function () {
     pins.analogWritePin(AnalogPin.P2, 0)
 })
 
-grove.onGesture(GroveGesture.Right, function () {
+grove.onGesture(GroveGesture.Left, function () {
     pksdriver.servo(pksdriver.Servos.S1, 0)
 })
 grove.onGesture(GroveGesture.Backward, function () {
@@ -162,9 +162,9 @@ grove.onGesture(GroveGesture.Up, function () {
     pins.analogWritePin(AnalogPin.P2, 1023)
 })
 grove.onGesture(GroveGesture.Forward, function () {
-    pksdriver.MotorRun(pksdriver.Motors.M1, pksdriver.Dir.CW, 70)
+    pksdriver.MotorRun(pksdriver.Motors.M1, pksdriver.Dir.CW, 255)
 })
-grove.onGesture(GroveGesture.Left, function () {
+grove.onGesture(GroveGesture.Right, function () {
     pksdriver.servo(pksdriver.Servos.S1, 90)
 })
 grove.initGesture()
@@ -186,10 +186,10 @@ grove.onGesture(GroveGesture.Down, function () {
 })
 grove.onGesture(GroveGesture.Wave, function () {
     pins.analogWritePin(AnalogPin.P2, 200)
-    pksdriver.MotorRun(pksdriver.Motors.M1, pksdriver.Dir.CW, 70)
-    pksdriver.servo(pksdriver.Servos.S1, 0)
+    pksdriver.MotorRun(pksdriver.Motors.M1, pksdriver.Dir.CW, 255)
+    pksdriver.servo(pksdriver.Servos.S1, 90)
 })
-grove.onGesture(GroveGesture.Right, function () {
+grove.onGesture(GroveGesture.Left, function () {
     pksdriver.servo(pksdriver.Servos.S1, 0)
 })
 grove.onGesture(GroveGesture.Backward, function () {
@@ -199,9 +199,9 @@ grove.onGesture(GroveGesture.Up, function () {
     pins.analogWritePin(AnalogPin.P2, 1023)
 })
 grove.onGesture(GroveGesture.Forward, function () {
-    pksdriver.MotorRun(pksdriver.Motors.M1, pksdriver.Dir.CW, 70)
+    pksdriver.MotorRun(pksdriver.Motors.M1, pksdriver.Dir.CW, 255)
 })
-grove.onGesture(GroveGesture.Left, function () {
+grove.onGesture(GroveGesture.Right, function () {
     pksdriver.servo(pksdriver.Servos.S1, 90)
 })
 grove.initGesture()
@@ -210,5 +210,3 @@ basic.forever(function () {
 })
 
 ```
-
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
